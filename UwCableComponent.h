@@ -165,6 +165,9 @@ public:
 	/** How many times to repeat the material along the length of the cable */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Cable Rendering", meta=(UIMin = "0.1", UIMax = "8"))
 	float TileMaterial;
+        
+        /** inititialize cable position **/
+        void InitCablePos();
 
 private:
 
@@ -176,8 +179,6 @@ private:
 	/** decides wether to release a locked particle from the spool */
 	void UpdateLength();
 
-        /** inititialize cable position **/
-        void InitCablePos();
 	
 	/** Perform collision traces for particles */
 	void PerformCableCollision();

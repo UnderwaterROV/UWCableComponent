@@ -20,7 +20,7 @@ void ANewUWCableActor::BeginPlay()
 {
 	Super::BeginPlay();
 	UE_LOG(LogTemp, Warning, TEXT("Created AUWCableActor")); 
-	
+        UwCableComponent->InitCablePos();	
 }
 
 // Called every frame
